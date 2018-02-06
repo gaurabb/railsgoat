@@ -3,9 +3,9 @@ jobs:
  build:
   docker:
    - image: circleci/ruby:2.4.1
-   steps:
-    - checkout
-    - run: echo "Say hello from build world"
+  steps:
+   - checkout
+   - run: echo "Say hello from build world"
  test:
   docker:
    - image: circleci/ruby:2.4.1
