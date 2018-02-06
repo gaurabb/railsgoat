@@ -13,7 +13,7 @@ jobs:
    - checkout
    - run:
       name: Testing Message
-      command: echo "Hello from testing world!"
+      command: echo "Hello from testing world!!"
 workflows:
  version: 2
  build_and_test:
