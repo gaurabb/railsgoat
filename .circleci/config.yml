@@ -1,6 +1,6 @@
 version: 2
 jobs:
-	build:
+	build1:
 		docker:
 			- image: circleci/ruby:2.4.1
 		steps:
@@ -18,8 +18,8 @@ workflows:
 	version: 2
 	build_and_test:
 		jobs:
-			- build
+			- build1
 			- test:
 					requires:
-						- build
+						- build1
 					
