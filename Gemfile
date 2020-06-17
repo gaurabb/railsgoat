@@ -8,19 +8,19 @@ ruby "2.4.3"
 
 gem "aruba"
 gem "bcrypt"
-gem "coffee-rails"
+gem "coffee-rails", ">= 4.2.2"
 gem "execjs"
 gem "foreman"
-gem "jquery-fileupload-rails"
-gem "jquery-rails"
+gem "jquery-fileupload-rails", ">= 0.4.7"
+gem "jquery-rails", ">= 4.4.0"
 gem "minitest"
 gem "powder" # Pow related gem
 gem "pry-rails" # not in dev group in case running via prod/staging @ a training
 gem "rails-perftest"
 gem "rake"
-gem "responders" #For Rails 4.2
+gem "responders" , ">= 2.4.0" #For Rails 4.2
 gem "ruby-prof"
-gem "sass-rails"
+gem "sass-rails", ">= 5.0.7"
 gem "simplecov", require: false, group: :test
 gem "sqlite3"
 gem "therubyracer"
@@ -33,7 +33,7 @@ gem "unicorn"
 # gem 'mailcatcher'
 
 group :development, :mysql do
-  gem "better_errors"
+  gem "better_errors", ">= 2.4.0"
   gem "binding_of_caller"
   gem "brakeman"
   gem "bundler-audit"
@@ -42,18 +42,18 @@ group :development, :mysql do
   gem "guard-rspec"
   gem "guard-shell"
   gem "pry"
-  gem "rack-livereload"
+  gem "rack-livereload", ">= 0.3.16"
   gem "rb-fsevent"
   gem "rubocop-github"
   gem "travis-lint"
 end
 
 group :development, :test, :mysql do
-  gem "capybara"
+  gem "capybara", ">= 2.17.0"
   gem "database_cleaner"
   gem "launchy"
-  gem "poltergeist"
-  gem "rspec-rails"
+  gem "poltergeist", ">= 1.17.0"
+  gem "rspec-rails", ">= 3.7.2"
   gem "test-unit"
 end
 
