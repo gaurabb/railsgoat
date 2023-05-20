@@ -20,7 +20,7 @@ gem "rails-perftest"
 gem "rake"
 gem "responders" #For Rails 4.2
 gem "ruby-prof"
-gem "sass-rails"
+gem "sass-rails", ">= 6.0.0"
 gem "simplecov", require: false, group: :test
 gem "sqlite3"
 gem "therubyracer"
