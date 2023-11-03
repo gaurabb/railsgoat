@@ -33,7 +33,7 @@ gem "unicorn"
 # gem 'mailcatcher'
 
 group :development, :mysql do
-  gem "better_errors"
+  gem "better_errors", ">= 2.8.0"
   gem "binding_of_caller"
   gem "brakeman"
   gem "bundler-audit"
