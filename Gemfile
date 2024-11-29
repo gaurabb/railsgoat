@@ -21,7 +21,7 @@ gem "rake"
 gem "responders" #For Rails 4.2
 gem "ruby-prof"
 gem "sass-rails"
-gem "simplecov", require: false, group: :test
+gem "simplecov", ">= 0.15.1", require: false, group: :test
 gem "sqlite3"
 gem "therubyracer"
 gem "turbolinks"
@@ -45,7 +45,7 @@ group :development, :mysql do
   gem "rack-livereload"
   gem "rb-fsevent"
   gem "rubocop-github"
-  gem "travis-lint"
+  gem "travis-lint", ">= 2.0.0"
 end
 
 group :development, :test, :mysql do
