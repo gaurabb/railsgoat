@@ -2,7 +2,7 @@
 source "https://rubygems.org"
 
 #don't upgrade
-gem "rails", "5.1.4"
+gem "rails", "7.1.5.2"
 
 ruby "2.4.3"
 
